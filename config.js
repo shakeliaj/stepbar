@@ -19,6 +19,7 @@ app.use(function(req, res, next) {
 app.use(morgan('dev'));
 
 app.use(express.static(__dirname + '/app'));
+app.use('/node_modules', express.static(__dirname + '/node_modules'));
 
 app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp" >
 <head>
-    <base href="/">
+    <base href="">
     <title>step bar</title>
     <meta charset="utf-8">
     <script src="/node_modules/angular/angular.min.js"></script>
@@ -11,9 +11,9 @@
     <script src="/node_modules/angular-material/angular-material.min.js"></script>
     <script src="index.js"></script>
 </head>
-<body ng-app="myApp">
-  <input type="text" ng-model="name">
+<body ng-controller="stepController">
   <p>{{ name }}</p>
+  <p>{{ finallyDammit }}</p>
 
 </body>
 </html>
